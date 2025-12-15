@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Web Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>TensorFlow.js Image Classification</h1>
+
+<div id="tf-container">
+  <img id="image" src="img/dog.jpg" width="300">
+  <p><strong>Prediction:</strong> <span id="prediction">Loading...</span></p>
+
+  <input type="file" id="upload">
+  <button id="classifyBtn">Classify New Image</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@latest"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
